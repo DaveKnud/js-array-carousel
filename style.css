@@ -25,6 +25,8 @@
 
 .img-container{
     width: 400px;
+    height: 400px;
+    position: relative;
 }
 
 img{
@@ -35,4 +37,13 @@ img{
     margin-left: -60px;
     font-size: 50px;
     color: rgb(255, 0, 0);
+    position: absolute;
+}
+
+.fa-solid.fa-circle-left{
+    font-size: 50px;
+    color: rgb(255, 0, 0);
+    position: absolute;
+    top:50%;
+    left:5px;
 }
