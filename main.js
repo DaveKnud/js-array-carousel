@@ -52,3 +52,25 @@ previous.addEventListener('click',
         }
     }
 )
+
+next.addEventListener('click',
+    function(){
+
+        if(ActiveImg > (img.length = 3)) {
+            ActiveImg = 0;
+
+            img[ActiveImg].classList.remove("active");
+            img[ActiveImg].classList.add("inactive");
+            console.log("ciao");
+    
+            //Cambia immagine passare a imm successiva
+            ActiveImg = ActiveImg + 1;
+    
+            //immagini successive cosa fa
+            img[ActiveImg].classList.remove("inactive");
+            img[ActiveImg].classList.add("active");
+        }
+    }
+)
+
+
